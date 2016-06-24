@@ -12,7 +12,7 @@
         </div>
         <div class="panel-body">
           <ul>
-            <li ng-if="::network.signal >= 0"><span>{{::network.ssid}}: </span><img ng-src="{{assetsUrl + '/wifi-icons/' + network.signal + '.png'}}" alt="signal-{{wifi.signal}}" class="signal-icon" /></li>
+            <li ng-if="::network.signal >= 0"><img ng-src="{{assetsUrl + '/wifi-icons/' + network.signal + '.png'}}" alt="signal-{{wifi.signal}}" class="signal-icon" /> {{::network.ssid}}</li>
             <li><span> <span translate="NETWORK.IP_ADDRESS"></span>:</span> {{::network.ip}}</li>
             <li ng-if="::network.speed"><span> <span translate="NETWORK.SPEED"></span>:</span>  {{::network.speed}}</li>
             <li><span> <span translate="NETWORK.ONLINE"></span>:</span>
